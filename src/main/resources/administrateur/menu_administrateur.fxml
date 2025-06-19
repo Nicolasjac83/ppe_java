@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="administrateur.MenuAdminController">
+   <children>
+      <Label fx:id="menu_administrateur" layoutX="199.0" layoutY="35.0" text="Menu des Administrateur">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableau_administrateur" layoutX="48.0" layoutY="98.0" prefHeight="200.0" prefWidth="505.0">
+        <columns>
+          <TableColumn fx:id="id_user" prefWidth="98.6666259765625" text="id_user" />
+          <TableColumn fx:id="nom" prefWidth="100.66671752929688" text="Nom" />
+            <TableColumn fx:id="prenom" prefWidth="102.0" text="Prénom" />
+            <TableColumn fx:id="emails" prefWidth="97.33331298828125" text="Emails" />
+            <TableColumn fx:id="actions" prefWidth="107.3333740234375" text="Actions" />
+        </columns>
+      </TableView>
+      <Button layoutX="288.0" layoutY="317.0" mnemonicParsing="false" onAction="#OnValiderAction" text="Valider" />
+      <Button layoutX="288.0" layoutY="369.0" mnemonicParsing="false" onAction="#OnRetourAction" text="Retour" />
+   </children>
+</Pane>

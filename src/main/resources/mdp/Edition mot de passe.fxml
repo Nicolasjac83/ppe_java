@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="422.0" prefWidth="544.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mdp.Motdepasse_edition">
+   <children>
+      <TextField fx:id="mdp" layoutX="195.0" layoutY="150.0" />
+      <TextField fx:id="confirmer" layoutX="195.0" layoutY="245.0" />
+      <Label layoutX="235.0" layoutY="27.0" />
+      <Label layoutX="211.0" layoutY="110.0" text="Mot de passe :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="229.0" layoutY="211.0" text="Confirmer">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="228.0" layoutY="319.0" mnemonicParsing="false" onAction="#OnSauvegarderAction" text="Sauvegarder" />
+      <Button layoutX="244.0" layoutY="375.0" mnemonicParsing="false" onAction="#OnRetourAction" text="Retour" />
+      <Label layoutX="204.0" layoutY="27.0" text="Edition Mdp">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

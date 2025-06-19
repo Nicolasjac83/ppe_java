@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="412.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rendez_vous.RendezVousController">
+    <children>
+        <TableView layoutX="22.0" layoutY="73.0" prefHeight="311.0" prefWidth="610.0">
+            <columns>
+                <TableColumn fx:id="identifiantColumn" prefWidth="160.79998397827148" text="Identifiant du Rendez-vous" />
+                <TableColumn fx:id="nomPatientColumn" prefWidth="140.80003356933594" text="Nom du patient" />
+                <TableColumn fx:id="specialiteMedecinColumn" prefWidth="150" text="Spécialité du Médecin" />
+                <TableColumn fx:id="statutColumn" prefWidth="156.39996337890625" text="Statut du Rendez-vous" />
+                <TableColumn fx:id="dateRendezVousColumn" prefWidth="144.4000244140625" text="Date du Rendez-vous" />
+            </columns>
+        </TableView>
+      <Label layoutX="257.0" layoutY="29.0" text="Prise d'un rendez vous">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+    </children>
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+</AnchorPane>

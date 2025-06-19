@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="application.controller"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <Label text="Email:" layoutX="174.0" layoutY="128.0" />
+    <Label text="Mot de passe:" layoutX="131.0" layoutY="170.0" />
+
+    <TextField> fx:id="emailField" layoutX="220.0" layoutY="125.0" </TextField>
+    <PasswordField fx:id="passwordField" layoutX="220.0" layoutY="167.0" />
+
+    <Button text="Connexion" layoutX="256.0" layoutY="215.0" />
+</AnchorPane>

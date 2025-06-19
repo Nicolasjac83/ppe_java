@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="207.0" prefWidth="354.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="medoc_stock.MedicamentController">
+
+    <Label layoutX="120.0" layoutY="5.0" text="Gestion des Médicaments" />
+
+    <Label layoutX="10" layoutY="40" text="Nom du Médicament:" />
+    <TextField fx:id="nomMedicamentTextField" layoutX="150" layoutY="40" />
+
+    <Label layoutX="10" layoutY="70" text="Quantité en Stock:" />
+    <TextField fx:id="quantiteTextField" layoutX="150" layoutY="70" />
+
+    <Label layoutX="10" layoutY="100" text="Niveau de Dangerosité:" />
+    <TextField fx:id="dangerositeTextField" layoutX="150" layoutY="100" />
+
+    <Button layoutX="10.0" layoutY="153.0" onAction="#ajouterMedicament" text="Ajouter" />
+    <Button layoutX="78.0" layoutY="153.0" onAction="#modifierMedicament" text="Modifier" />
+    <Button layoutX="153.0" layoutY="153.0" onAction="#supprimerMedicament" text="Supprimer" />
+
+    <!-- Ajout d'un bouton pour commander le stock -->
+    <Button layoutX="232.0" layoutY="153.0" onAction="#commanderStock" text="Commander Stock" />
+
+    <!-- Autres éléments d'interface -->
+
+</AnchorPane>

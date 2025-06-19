@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="362.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fournisseur.FournisseurController">
+   <children>
+      <TextField fx:id="champNomFournisseur" layoutX="331.0" layoutY="159.0" prefHeight="25.0" prefWidth="169.0" />
+      <Button layoutX="378.0" layoutY="293.0" mnemonicParsing="false" onAction="#onRetour" text="Retour" />
+      <Label fx:id="ajoutfournisseur" layoutX="243.0" layoutY="24.0" text="Ajout d'un fournisseur">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fournisseur" layoutX="204.0" layoutY="163.0" text="Nom du fournisseur :" />
+      <Button layoutX="377.0" layoutY="231.0" mnemonicParsing="false" onAction="#onValider" text="Valider" />
+      <ListView fx:id="listeFournisseurs" layoutX="14.0" layoutY="101.0" prefHeight="246.0" prefWidth="170.0" />
+      <Label fx:id="fournisseurs" layoutX="33.0" layoutY="73.0" text="Liste des fournisseurs :" />
+   </children>
+</AnchorPane>

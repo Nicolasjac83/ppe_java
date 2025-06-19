@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="medecin.MedecinController">
+    <children>
+        <Label layoutX="20.0" layoutY="30.0" text="Filtrer par spécialité :" />
+        <ComboBox fx:id="specialityComboBox" layoutX="140.0" layoutY="26.0" prefWidth="150.0" />
+
+        <Label layoutX="20.0" layoutY="80.0" text="Filtrer par médecin :" />
+        <ComboBox fx:id="doctorComboBox" layoutX="140.0" layoutY="76.0" prefWidth="150.0" />
+
+        <Label layoutX="20.0" layoutY="130.0" text="Filtrer par date :" />
+        <DatePicker fx:id="datePicker" layoutX="140.0" layoutY="126.0" prefWidth="150.0" />
+
+        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#searchAvailability" text="Rechercher" />
+
+        <TableView fx:id="availabilityTable" layoutX="26.0" layoutY="217.0" prefHeight="260.0" prefWidth="560.0">
+            <columns>
+                <TableColumn prefWidth="100.0" text="Médecin" />
+                <TableColumn prefWidth="100.0" text="Spécialité" />
+                <TableColumn prefWidth="100.0" text="Date" />
+                <TableColumn prefWidth="130.0" text="Heure de début" />
+                <TableColumn prefWidth="130.0" text="Heure de fin" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospitalisation.ChambreController">
+   <children>
+      <Label fx:id="chambre" layoutX="219.0" layoutY="26.0" text="Menu des chambres">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="menu_chambre" layoutY="100.0" prefHeight="200.0" prefWidth="600.0">
+        <columns>
+          <TableColumn prefWidth="100.0" text="id_fichepatient" />
+          <TableColumn prefWidth="60.666656494140625" text="Nom" />
+            <TableColumn prefWidth="62.66668701171875" text="Prenom" />
+            <TableColumn prefWidth="111.33331298828125" text="Date d'entrer" />
+            <TableColumn prefWidth="104.66668701171875" text="Date de sortie" />
+            <TableColumn prefWidth="160.0" text="Description de la maladie" />
+        </columns>
+      </TableView>
+      <Button fx:id="validerChambre" layoutX="274.0" layoutY="332.0" mnemonicParsing="false" onAction="#OnValiderChambre" text="Valider" />
+   </children>
+</Pane>

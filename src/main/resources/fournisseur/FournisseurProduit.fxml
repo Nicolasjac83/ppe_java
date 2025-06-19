@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="452.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fournisseur.FournisseurProduitController">
+    <children>
+        <Label fx:id="liste" layoutX="30.0" layoutY="95.0" text="Liste des fournisseurs :" />
+        <ListView fx:id="listeFournisseurs" layoutX="30.0" layoutY="124.0" prefHeight="300.0" prefWidth="200.0" />
+        <Label fx:id="selection" layoutX="280.0" layoutY="95.0" text="Produits du fournisseur sélectionné :" />
+        <ListView fx:id="listeProduitsFournisseur" layoutX="280.0" layoutY="125.0" prefHeight="216.0" prefWidth="250.0" />
+        <Label fx:id="prix" layoutX="280.0" layoutY="360.0" text="Prix du produit sélectionné :" />
+        <TextField fx:id="champPrixProduit" layoutX="286.0" layoutY="399.0" prefWidth="100.0" />
+        <Button fx:id="btnAjouterPrix" layoutX="405.0" layoutY="399.0" mnemonicParsing="false" onAction="#onAjouterPrix" text="Ajouter Prix" />
+        <Label layoutX="223.0" layoutY="23.0" prefHeight="27.0" prefWidth="182.0" text="Fiche des Fournisseurs">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
